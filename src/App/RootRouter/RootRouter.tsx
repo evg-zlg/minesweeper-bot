@@ -7,7 +7,7 @@ import { changeWinners } from '../../store/reducers/winnersSlice';
 import { Header } from '../../components/Header';
 import { APPRoute, localStorageKey } from '../../const/const';
 import { GamePage } from '../../Pages/GamePage';
-import { WinnersPage } from '../../Pages/WinnersPage';
+// import { WinnersPage } from '../../Pages/WinnersPage';
 import { IWinner } from '../../types/types';
 
 function RootRouter() {
@@ -36,7 +36,7 @@ function RootRouter() {
       <Header />
       <Routes>
         <Route path={APPRoute.main} element={<GamePage />} />
-        <Route path={APPRoute.winners} element={<WinnersPage />} />
+        {/* <Route path={APPRoute.winners} element={<WinnersPage />} /> */}
       </Routes>
     </>
   );
